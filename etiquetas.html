@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Document</title>
     <style>
       * {
@@ -76,8 +83,11 @@
         color: rgb(160, 175, 175);
         margin: 0 20px;
       }
-      .link_inside::before {
-        content: 🏅;
+      i {
+        color: black;
+      }
+      p{
+        color: azure;
       }
       /* no tengo idea de por qué no funciona */
 
@@ -86,6 +96,16 @@
       }
       .progreso {
         color: azure;
+      }
+      #vermas{
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        color: blue;
+      }
+      #vermas:hover{
+        cursor: pointer;
+        color: gray;
       }
       .cursos {
         color: azure;
@@ -128,7 +148,10 @@
     <main>
       <section class="espaciobarra">
         <ul>
-          <p><a class="link_inside" href="Platzi.com">Tu avance</a></p>
+          <p>
+            <a class="link_inside" href="Platzi.com"><i class="fa-solid fa-medal"></i
+              >Tu avance</a>
+          </p>
           <p><a class="link_inside" href="Platzi.com">Ruta</a></p>
           <p><a class="link_inside" href="Platzi.com">Aprendizaje</a></p>
         </ul>
@@ -143,6 +166,7 @@
             <ul>
               <h3 class="progreso">Mi progreso</h3>
             </ul>
+            <p id="vermas">ver más→</p>
           </section>
         </div>
         <section>
@@ -171,6 +195,7 @@
           ></a>
         </section>
       </section>
+
       <p>
         What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing
         and typesetting industry. Lorem Ipsum has been the industry's standard
@@ -302,7 +327,8 @@
 
       <h3>
         <a href="https://www.youtube.com/@Platzi">
-          <br /><i id="canal">Platzi Channel</i></a>
+          <br /><i id="canal">Platzi Channel</i></a
+        >
       </h3>
     </footer>
   </body>
